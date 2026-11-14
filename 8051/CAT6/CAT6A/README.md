@@ -1,11 +1,11 @@
-﻿# CAT6A â€“ 8051 UART Initialization and Character Transmission
+# CAT6A – 8051 UART Initialization and Character Transmission
 
 ## Experiment Details
-- **Course:** 25CS2741 â€“ Fundamentals of Internet of Things + Lab
+- **Course:** 25CS2741 – Fundamentals of Internet of Things + Lab
 - **Experiment:** UART Initialization and Character Transmission
 - **Date:** 17/08/26
 - **Microcontroller:** AT89S52 (8051)
-- **Software:** Keil ÂµVision
+- **Software:** Keil µVision
 - **Programming Language:** Embedded C
 
 ## Aim
@@ -54,10 +54,10 @@ To configure the UART of the AT89S52 microcontroller and transmit characters ser
 6. Continue transmitting the message.
 
 ## Source Files
-- uart_tx.c â€“ Embedded C source code.
-- uart_tx.uvproj â€“ Keil project file.
-- Objects/uart_tx.hex â€“ Compiled HEX file.
-- circuit.png â€“ Circuit diagram.
+- uart_tx.c – Embedded C source code.
+- uart_tx.uvproj – Keil project file.
+- Objects/uart_tx.hex – Compiled HEX file.
+- circuit.png – Circuit diagram.
 
 ## Result
 The UART of the AT89S52 microcontroller was configured successfully, and the message was transmitted serially to the PC terminal.

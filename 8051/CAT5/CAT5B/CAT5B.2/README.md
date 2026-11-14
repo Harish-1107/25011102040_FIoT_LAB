@@ -1,4 +1,4 @@
-﻿# EXPERIMENT DETAILS
+# EXPERIMENT DETAILS
 
 **EXP:** CONTINUOUS ASSESSMENT 5 (CAT5)
 
@@ -15,7 +15,7 @@
 ### 1. Hardware Setup & Circuit Diagram
 
 - **MCU:** AT89S52 @ 11.0592 MHz
-- **Signal Output Pin:** `P1.1` â†’ Oscilloscope Channel 1
+- **Signal Output Pin:** `P1.1` → Oscilloscope Channel 1
 - **Mode Selector Button:** `P3.2`
 - **Frequency Modes:** 100 Hz, 500 Hz, 1 kHz, 2 kHz, 5 kHz
 

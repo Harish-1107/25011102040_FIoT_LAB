@@ -1,4 +1,4 @@
-﻿# EXPERIMENT DETAILS
+# EXPERIMENT DETAILS
 
 **EXP:** CONTINUOUS ASSESSMENT 5 (CAT5)
 
@@ -9,10 +9,10 @@
 **HARDWARE SETUP / PLATFORM:**
 - Microcontroller: AT89S52 (8051)
 - Crystal Frequency: 11.0592 MHz
-- Software: Keil ÂµVision
+- Software: Keil µVision
 - Output: LED
 
-**TASK NO:** CAT5A â€“ Timer 0 Interrupt
+**TASK NO:** CAT5A – Timer 0 Interrupt
 
 ## CIRCUIT DIAGRAM
 
