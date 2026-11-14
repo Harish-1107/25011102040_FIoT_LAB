@@ -49,7 +49,17 @@
 - Each valid button press advances the operating mode.
 - After Mode 4, the system returns to Mode 1.
 
-**INFERENCE:**
+## Source files
 
-A four-state LED control system is implemented using the AT89S52 microcontroller. The system demonstrates register-level GPIO control, LED sequencing, binary counting, alternating LED patterns and button-based mode switching with software debouncing.
+- [`cat_03.c`](cat_03.c) and [`switch_logic.c`](switch_logic.c) - 8051 firmware variants.
+- [`Switch_logic_28.7.uvproj`](Switch_logic_28.7.uvproj) - Keil project file.
+- [`circuit.png`](circuit.png) - Circuit diagram.
+
+## Verification note
+
+The implementation uses P1.0-P1.3 for LED patterns and an active-low button on P2.6. The current source also contains `delay_ms(50 0);` in the all-flash routine; this source-level syntax issue must be corrected before claiming a successful build. Firmware and circuit files were not modified by this documentation-only audit.
+
+## Result
+
+A four-state LED control system is described for the AT89S52 microcontroller. It demonstrates register-level GPIO control, LED sequencing, binary counting, alternating LED patterns, and button-based mode switching with software debouncing.
 
