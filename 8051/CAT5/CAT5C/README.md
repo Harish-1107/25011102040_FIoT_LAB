@@ -19,7 +19,7 @@
 - **Control Method:** Timer Interrupt-Based Step Sequencing
 - **Task Status:** Optional for this week
 
-![CAT5C Circuit Diagram](circuit.png)
+![CAT5C circuit schematic](CAT5C%20Stepper%20Motor%20Control%20Schematic.png)
 
 ### 2. Core Logic / Pseudocode / Code Base
 
@@ -58,4 +58,10 @@ The motor speed is controlled by changing the time interval between consecutive 
 ### 3. Inference
 
 Timer-based step sequencing enables controlled stepper motor rotation without software delay loops. Changing the timer interval controls motor speed while maintaining a consistent stepping sequence.
+
+## Source files
+
+- [`main.c`](main.c) - Stepper-motor control implementation.
+- [`TASK5C.uvproj`](TASK5C.uvproj) - Keil project file.
+- [`CAT5C Stepper Motor Control Schematic.png`](CAT5C%20Stepper%20Motor%20Control%20Schematic.png) - Circuit schematic.
 

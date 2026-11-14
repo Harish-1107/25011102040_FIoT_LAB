@@ -18,8 +18,8 @@ To interface a 4Ã—4 matrix keypad, seven-segment display and LEDs with the AT
 - USB Programmer
 
 ## Pin Configuration
-- **P2.0â€“P2.3:** Keypad columns
-- **P2.4â€“P2.7:** Keypad rows
+- **P2.1-P2.3:** Keypad column inputs used by the firmware
+- **P2.4-P2.7:** Row drive lines used by the firmware
 - **P0.0â€“P0.7:** Seven-segment display
 - **P1.0:** On-board LED
 
@@ -47,6 +47,10 @@ To interface a 4Ã—4 matrix keypad, seven-segment display and LEDs with the AT
 - `week4.uvproj` â€“ Keil project.
 - `Objects/week4.hex` â€“ Compiled HEX file.
 - `circuit.png` â€“ Circuit diagram.
+
+## Verification note
+
+The source implements keypad scanning on P2, seven-segment output on P0, and LED actions on P1. The source-level scan does not use all four column inputs stated by a generic 4x4 description, so the exact physical keypad mapping should be checked against the circuit image before hardware evaluation.
 
 ## Result
 The matrix keypad, seven-segment display and LEDs were interfaced with the AT89S52 microcontroller. Keypad inputs were used to display digits and execute the corresponding LED operations.

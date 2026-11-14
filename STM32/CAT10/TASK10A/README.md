@@ -1,4 +1,4 @@
-﻿# EXPERIMENT DETAILS
+# CAT10A - STM32 to ESP8266 UART Communication
 
 **EXP:** CONTINUOUS ASSESSMENT 10
 
@@ -8,7 +8,7 @@
 
 **COURSE:** Foundations of IoT (FIoT)
 
-**NAME OF EXP:** CAT 10 Task 10A: Establish STM32 to ESP8266 UART Communication
+**NAME OF EXP:** Establish STM32 to ESP8266 UART Communication
 
 **HARDWARE SETUP / PLATFORM:** Embedded Development Kit + Keil / STM32CubeIDE
 
@@ -23,8 +23,10 @@ To interface STM32 with an Espressif ESP8266 (Wemos D1 Mini / ESP-01) module via
 
 | Microcontroller Pin | Peripheral Line | Description |
 |:---:|:---:|:---|
-| **PA2 / PA9** | USART TX to ESP RX | Serial AT command interface |
-| **PA3 / PA10** | USART RX from ESP TX | Serial AT response interface |
+| **PA2 (USART2_TX)** | ESP8266 RX | Serial AT command interface |
+| **PA3 (USART2_RX)** | ESP8266 TX | Serial AT response interface |
+| **PA9 (USART1_TX)** | PC/debug RX | Serial bridge output |
+| **PA10 (USART1_RX)** | PC/debug TX | Serial bridge input |
 
 ---
 
@@ -33,8 +35,9 @@ To interface STM32 with an Espressif ESP8266 (Wemos D1 Mini / ESP-01) module via
 
 ---
 
-## 4. Theory & Technical Overview
-The experiment utilizes embedded peripheral drivers, hardware abstraction libraries, and structured control flow to achieve real-time deterministic execution.
+## 4. Working principle
+
+The firmware sends `AT`, `AT+CWMODE=1`, `AT+CWJAP`, and `AT+CIFSR` through USART2 to the ESP8266, then bridges characters between USART2 and the PC/debug USART1. The source currently contains Wi-Fi credentials in the application code; replace them locally before sharing or deploying the firmware.
 
 ---
 
@@ -44,5 +47,13 @@ The experiment utilizes embedded peripheral drivers, hardware abstraction librar
 3. Connect the hardware debugger (USBasp for 8051 or ST-Link V2 for STM32).
 4. Download the compiled binary (`F8`).
 5. Open serial terminal or inspect visual indicators to verify task execution.
+
+## Source files
+
+- [`Core/Src/main.c`](Core/Src/main.c) - UART bridge and ESP8266 AT-command sequence.
+- [`Core/Inc/main.h`](Core/Inc/main.h) - Application declarations.
+- [`lab10.ioc`](lab10.ioc) - STM32CubeMX configuration.
+- [`MDK-ARM/lab10.uvprojx`](MDK-ARM/lab10.uvprojx) - Keil project.
+- [`circuit.png`](circuit.png) - Circuit diagram.
 
 

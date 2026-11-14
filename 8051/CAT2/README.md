@@ -1,4 +1,6 @@
-﻿CAT2 - 8051 Tool Chain Setup and Bare-Metal LED Blink
+# CAT2 - 8051 Toolchain Setup and Bare-Metal LED Blink
+
+## Experiment details
 
 EXP
 CAT2
@@ -14,14 +16,14 @@ Microcontroller: AT89S52
 Architecture: 8051
 Development Board: AT89S52 Development Board
 LED: On-board LED
-GPIO Pin: To be verified
+GPIO Pin: P1.0 (`LED` in `week2_l.c`)
 
 TASK NO
 1. Hardware Board Bring-Up
 2. Bare-Metal LED Blink
 3. Custom library function for delay functionality.
 
-![Circuit Diagram](circuit.png)
+![CAT2 circuit diagram](circuit.png)
 
 CORE LOGIC / PSEUDOCODE / CODE BASE
 
@@ -42,6 +44,13 @@ Custom Delay Function:
 - Use nested loops to generate delays.
 - Call the delay function from the main program.
 
-INFERENCE
+## Source files
+
+- [`week2_l.c`](week2_l.c) - LED toggle loop and software delay implementation.
+- [`week2.uvproj`](week2.uvproj) - Keil project file.
+- [`Objects/week2.hex`](Objects/week2.hex) - Existing build output.
+
+## Result
+
 The AT89S52 development board was used to understand the 8051 toolchain and hardware bring-up process. A bare-metal C program was developed to control an LED using direct register access. A custom software delay function was implemented for LED blinking.
 
