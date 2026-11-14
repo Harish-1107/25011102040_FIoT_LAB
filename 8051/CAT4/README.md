@@ -1,18 +1,18 @@
-﻿# CAT4 â€“ 8051 Matrix Keypad, Seven-Segment Display and LED Interfacing
+# CAT4 – 8051 Matrix Keypad, Seven-Segment Display and LED Interfacing
 
 ## Experiment Details
-- **Course:** 25CS2741 â€“ Fundamentals of Internet of Things + Lab
+- **Course:** 25CS2741 – Fundamentals of Internet of Things + Lab
 - **Date:** 03/08/2026
 - **Microcontroller:** AT89S52 (8051)
-- **Software:** Keil ÂµVision
+- **Software:** Keil µVision
 - **Programming Language:** Embedded C
 
 ## Aim
-To interface a 4Ã—4 matrix keypad, seven-segment display and LEDs with the AT89S52 microcontroller to perform different operations based on keypad inputs.
+To interface a 4×4 matrix keypad, seven-segment display and LEDs with the AT89S52 microcontroller to perform different operations based on keypad inputs.
 
 ## Hardware Requirements
 - AT89S52 Development Board
-- 4Ã—4 Matrix Keypad
+- 4×4 Matrix Keypad
 - D168K Seven-Segment Display
 - On-board LEDs
 - USB Programmer
@@ -20,7 +20,7 @@ To interface a 4Ã—4 matrix keypad, seven-segment display and LEDs with the AT
 ## Pin Configuration
 - **P2.1-P2.3:** Keypad column inputs used by the firmware
 - **P2.4-P2.7:** Row drive lines used by the firmware
-- **P0.0â€“P0.7:** Seven-segment display
+- **P0.0–P0.7:** Seven-segment display
 - **P1.0:** On-board LED
 
 ## Circuit Diagram
@@ -28,7 +28,7 @@ To interface a 4Ã—4 matrix keypad, seven-segment display and LEDs with the AT
 ![CAT4 Circuit Diagram](circuit.png)
 
 ## Task Description
-- Scan the 4Ã—4 matrix keypad to detect key presses.
+- Scan the 4×4 matrix keypad to detect key presses.
 - Display the corresponding digit on the seven-segment display.
 - Control LED operations according to the detected key.
 - Implement running LED, alternate LED, binary counter and blinking patterns.
@@ -43,10 +43,10 @@ To interface a 4Ã—4 matrix keypad, seven-segment display and LEDs with the AT
 6. Repeat the process.
 
 ## Source Files
-- `week4_logic.c` â€“ Embedded C program.
-- `week4.uvproj` â€“ Keil project.
-- `Objects/week4.hex` â€“ Compiled HEX file.
-- `circuit.png` â€“ Circuit diagram.
+- `week4_logic.c` – Embedded C program.
+- `week4.uvproj` – Keil project.
+- `Objects/week4.hex` – Compiled HEX file.
+- `circuit.png` – Circuit diagram.
 
 ## Verification note
 

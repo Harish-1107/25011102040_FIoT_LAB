@@ -1,4 +1,4 @@
-﻿# EXPERIMENT DETAILS
+# EXPERIMENT DETAILS
 
 **EXP:** CONTINUOUS ASSESSMENT 7 (CAT7)
 
@@ -8,12 +8,12 @@
 
 **HARDWARE SETUP / PLATFORM:**
 - Microcontroller: AT89S52 (8051)
-- Display: 16Ã—2 LCD (HD44780 compatible)
+- Display: 16×2 LCD (HD44780 compatible)
 - Interface: 4-bit mode
 - Crystal Frequency: 11.0592 MHz
-- Software: Keil ÂµVision
+- Software: Keil µVision
 
-**TASK NO:** CAT7B â€“ LCD Cursor Positioning and Dynamic Value Display
+**TASK NO:** CAT7B – LCD Cursor Positioning and Dynamic Value Display
 
 ## CIRCUIT DIAGRAM
 
@@ -21,14 +21,14 @@
 
 ## OBJECTIVE
 
-- Implement cursor positioning on a 16Ã—2 LCD.
+- Implement cursor positioning on a 16×2 LCD.
 - Display text at specific row and column positions.
 - Display strings using a dedicated function.
 - Display numerical values dynamically on the LCD.
 
 ## CORE LOGIC
 
-1. Initialize the 16Ã—2 LCD in 4-bit mode.
+1. Initialize the 16×2 LCD in 4-bit mode.
 2. Implement `lcd_cmd()` to send LCD commands.
 3. Implement `lcd_data()` to send character data.
 4. Implement `lcd_goto(row, column)` to position the cursor.
@@ -38,5 +38,5 @@
 
 ## Observations and Inference
 
-LCD cursor positioning and dynamic data display operations were implemented using the AT89S52 microcontroller. Text and numerical values can be displayed at specific positions on the 16Ã—2 LCD.
+LCD cursor positioning and dynamic data display operations were implemented using the AT89S52 microcontroller. Text and numerical values can be displayed at specific positions on the 16×2 LCD.
 

@@ -1,4 +1,4 @@
-﻿# EXPERIMENT DETAILS
+# EXPERIMENT DETAILS
 
 **EXP:** CONTINUOUS ASSESSMENT 6 (CAT6)
 
@@ -9,12 +9,12 @@
 **HARDWARE SETUP / PLATFORM:**
 - Microcontroller: AT89S52 (8051)
 - Crystal Frequency: 11.0592 MHz
-- Compiler: Keil ÂµVision
+- Compiler: Keil µVision
 - Serial Communication: USB-to-TTL Converter
 - Terminal Software: PuTTY
 - Baud Rate: 9600 bps
 
-**TASK NO:** CAT6B â€“ UART Character Echo
+**TASK NO:** CAT6B – UART Character Echo
 
 ## CIRCUIT DIAGRAM
 

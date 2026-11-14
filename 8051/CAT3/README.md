@@ -1,4 +1,4 @@
-﻿# CAT3 â€“ Timer-Based LED Pattern Generator and Button Interrupt Controller
+# CAT3 – Timer-Based LED Pattern Generator and Button Interrupt Controller
 
 **EXP:** CAT3
 
@@ -39,10 +39,10 @@
 
 **3. LED Operating Modes**
 
-- **Mode 1 â€“ Running LED:** LEDs turn ON sequentially from LED1 to LED4 and repeat.
-- **Mode 2 â€“ Binary Counter:** LEDs display a four-bit binary count from 0000 to 1111 and repeat.
-- **Mode 3 â€“ Alternating Pattern:** LEDs alternate between 1010 and 0101.
-- **Mode 4 â€“ All LED Flash:** All four LEDs flash between 1111 and 0000.
+- **Mode 1 – Running LED:** LEDs turn ON sequentially from LED1 to LED4 and repeat.
+- **Mode 2 – Binary Counter:** LEDs display a four-bit binary count from 0000 to 1111 and repeat.
+- **Mode 3 – Alternating Pattern:** LEDs alternate between 1010 and 0101.
+- **Mode 4 – All LED Flash:** All four LEDs flash between 1111 and 0000.
 
 **4. Mode Switching**
 - Initially, all LEDs remain OFF.

@@ -1,4 +1,4 @@
-﻿# EXPERIMENT DETAILS
+# EXPERIMENT DETAILS
 
 **EXP:** CONTINUOUS ASSESSMENT 7 (CAT7)
 
@@ -8,12 +8,12 @@
 
 **HARDWARE SETUP / PLATFORM:**
 - Microcontroller: AT89S52 (8051)
-- Display: 16Ã—2 LCD (HD44780 compatible)
+- Display: 16×2 LCD (HD44780 compatible)
 - Interface: 4-bit mode
 - Crystal Frequency: 11.0592 MHz
-- Software: Keil ÂµVision
+- Software: Keil µVision
 
-**TASK NO:** CAT7A â€“ LCD Initialization and Character Display
+**TASK NO:** CAT7A – LCD Initialization and Character Display
 
 ## CIRCUIT DIAGRAM
 
@@ -21,7 +21,7 @@
 
 ## OBJECTIVE
 
-- Interface a 16Ã—2 LCD with the AT89S52 microcontroller.
+- Interface a 16×2 LCD with the AT89S52 microcontroller.
 - Initialize the LCD in 4-bit communication mode.
 - Implement LCD command and data functions.
 - Display individual characters and strings on the LCD.
@@ -39,5 +39,5 @@
 
 ## Observations and Inference
 
-The 16Ã—2 LCD was successfully interfaced with the AT89S52 microcontroller using 4-bit communication. LCD initialization, command transmission, and character/string display operations were implemented.
+The 16×2 LCD was successfully interfaced with the AT89S52 microcontroller using 4-bit communication. LCD initialization, command transmission, and character/string display operations were implemented.
 

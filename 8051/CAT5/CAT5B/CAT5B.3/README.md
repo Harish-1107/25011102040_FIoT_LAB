@@ -1,4 +1,4 @@
-﻿# EXPERIMENT DETAILS
+# EXPERIMENT DETAILS
 
 **EXP:** CONTINUOUS ASSESSMENT 5 (CAT5)
 
@@ -15,7 +15,7 @@
 ### 1. Hardware Setup & Circuit Diagram
 
 - **MCU:** AT89S52 @ 11.0592 MHz
-- **Signal Output:** `P1.1` â†’ Oscilloscope Channel 1
+- **Signal Output:** `P1.1` → Oscilloscope Channel 1
 - **Waveform Selector:** `P3.2` pushbutton
 - **Waveform Modes:**
   - Square Wave
@@ -29,14 +29,14 @@
 
 **Working Principle:**
 
-The signal generator uses 24-bit waveform patterns stored in ROM. Timer 0 generates an interrupt every 500 Âµs, and the ISR shifts the selected waveform pattern onto `P1.1` one bit at a time, starting from the most significant bit.
+The signal generator uses 24-bit waveform patterns stored in ROM. Timer 0 generates an interrupt every 500 µs, and the ISR shifts the selected waveform pattern onto `P1.1` one bit at a time, starting from the most significant bit.
 
 The waveform selector button connected to `P3.2` switches between the four available waveform modes.
 
 **Pseudocode:**
 
 1. Store the four 24-bit waveform masks in a ROM array.
-2. Configure Timer 0 to generate interrupts at 500 Âµs intervals.
+2. Configure Timer 0 to generate interrupts at 500 µs intervals.
 3. In the Timer 0 ISR:
    - Output bit `(23 - bit_idx)` to `P1.1`.
    - Increment `bit_idx` to move to the next bit.
