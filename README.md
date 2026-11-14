@@ -1,4 +1,4 @@
-﻿# Fundamentals of IoT (FIoT) Laboratory Submission
+# Fundamentals of IoT (FIoT) Laboratory Submission
 
 ## 1. Student and Course Information
 
@@ -34,11 +34,16 @@ This repository is organized into distinct hardware platform directories complyi
 │   ├── CAT6/                           # CAT 6: Serial UART Communication (8051)
 │   └── CAT7/                           # CAT 7: Hardware Interrupts & Relay / Sensor Interfacing
 │
-└── STM32/                              # STM32 ARM Cortex-M Platform (CAT 9, 10, 12)
+└── STM32/                              # STM32 ARM Cortex-M Platform (CAT 8 - CAT 15)
     ├── README.md                       # STM32 platform overview & pin mappings
-    ├── CAT9/                           # CAT 9: Basic UART Communication & Command Parser (F103)
-    ├── CAT10/                          # CAT 10: ESP8266 AT Command State Machine & Embedded Web Server
-    └── CAT12/                          # CAT 12: BME280 I2C Bosch Sensor API & Wi-Fi HTTP Telemetry
+    ├── CAT8/                           # CAT 8: STM32 GPIO Bring-Up, Buttons & Multi-LEDs (TASK 8A/B/C)
+    ├── CAT9/                           # CAT 9: Basic UART Communication & Command Parser (TASK 9A/B)
+    ├── CAT10/                          # CAT 10: ESP8266 AT Command State Machine & Embedded Web Server (TASK 10A/B/C)
+    ├── CAT11/                          # CAT 11: ADC Interfacing & Analog Sensor Conditioning (TASK 11A/B)
+    ├── CAT12/                          # CAT 12: BME280 I2C Bosch Sensor API & Wi-Fi HTTP Telemetry
+    ├── CAT13/                          # CAT 13: Cloud IoT Telemetry via MQTT Broker (TASK 13)
+    ├── CAT14/                          # CAT 14: Bi-directional IoT Actuation & Cloud Telemetry Control (TASK 14)
+    └── CAT15/                          # CAT 15: Environmental Sensing, OpenWeather API Comparison & Node-RED (TASK 15)
 ```
 
 ---
